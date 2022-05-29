@@ -1,0 +1,52 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,100&display=swap');
+
+* {
+    margin: 0; padding: 0;
+}
+
+html {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+
+    background: url(..//assets/img/bgImg.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+    .Container {
+        margin: 10vh 10vh 10vh 10vh;
+    }
+        .Artists {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+            .Artist {
+                width: 150px;
+                height: 150px;
+                color: #fff;
+                background-color: #fff;
+                list-style: none;
+                margin: 0 20px 60px 0;
+                border-radius: 100%;
+                transition:all 1.07s;
+            }
+                .Playing {
+                    transform: scale(1.1);
+                    border-color: #ffc600;
+                    box-shadow: 0 0 100px #ffc600;
+                }
+                @media (min-width: 0px) { .Artist { flex-shrink: 0; } }
+                @media (min-width: 400px) { .Artist { flex-shrink: 1; } }
+                .RappersBackground {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 7.25px;
+                }
+                .Text {
+                    font-weight: bold;
+                    color: red;
+                }
